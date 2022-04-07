@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+E:\java\Nueva carpeta\PruebaHibernateJPA\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1067094681.index
+3057645964.index

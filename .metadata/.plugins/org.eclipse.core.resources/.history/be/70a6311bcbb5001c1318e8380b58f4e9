@@ -1,0 +1,177 @@
+package vista.gui;
+
+import java.awt.BorderLayout;
+
+
+import java.awt.FlowLayout;
+import java.awt.Font;
+
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JSeparator;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.EmptyBorder;
+
+import com.camilo.entidades.Mascota;
+
+import controlador.Coordinador;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class ConsultarMascotaGui extends JDialog implements ActionListener{
+
+	private final JPanel contentPanel = new JPanel();
+	private JTextField txtIdDueno;
+	private JTextField txtNombre;
+	private JTextField txtraza;
+	private JButton btnCancelar;
+	private JTextField txtSexo;
+	private JTextField txtColor;
+	private JTextField txtBusqueda;
+	private Coordinador miCoordinador;
+	private JLabel lblIdmascota;
+	private JButton btnBuscar;
+	Mascota miMascota;
+	private JButton btnVaciar;
+
+	/**
+	 * Create the dialog.
+	 * @param b 
+	 * @param miVentanaPrincipal 
+	 */
+	
+	public ConsultarMascotaGui(VentanaPrincipal miVentanaPrincipal, boolean b) {
+		setBounds(100, 100, 450, 300);
+		getContentPane().setLayout(new BorderLayout());
+		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
+		getContentPane().add(contentPanel, BorderLayout.CENTER);
+		contentPanel.setLayout(null);
+		iniciarComponentes();
+	}
+
+	
+	public void setMiCoordinador(Coordinador miCoordinador) {
+		this.miCoordinador=miCoordinador;	
+	}
+	
+	private void iniciarComponentes() {
+		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
+		getContentPane().add(contentPanel, BorderLayout.CENTER);
+		contentPanel.setLayout(null);
+		
+		JLabel lblTitulo = new JLabel("CONSULTAR MASCOTA");
+		lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);
+		lblTitulo.setFont(new Font("Tw Cen MT", Font.BOLD, 20));
+		lblTitulo.setBounds(28, 11, 372, 28);
+		contentPanel.add(lblTitulo);
+				
+		JPanel panel = new JPanel();
+		panel.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
+		panel.setBounds(30, 84, 370, 151);
+		contentPanel.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblDueno = new JLabel("Id Due\u00F1o:");
+		lblDueno.setBounds(204, 11, 71, 21);
+		panel.add(lblDueno);
+		
+		txtIdDueno = new JTextField();
+		txtIdDueno.setBounds(274, 11, 86, 20);
+		panel.add(txtIdDueno);
+		txtIdDueno.setColumns(10);
+		
+		JLabel lblNombre = new JLabel("Nombre:");
+		lblNombre.setBounds(29, 43, 71, 21);
+		panel.add(lblNombre);
+		
+		txtNombre = new JTextField();
+		txtNombre.setColumns(10);
+		txtNombre.setBounds(93, 43, 86, 20);
+		panel.add(txtNombre);
+		
+		JLabel lblRaza = new JLabel("Raza:");
+		lblRaza.setBounds(219, 43, 71, 21);
+		panel.add(lblRaza);
+		
+		txtraza = new JTextField();
+		txtraza.setColumns(10);
+		txtraza.setBounds(274, 43, 86, 20);
+		panel.add(txtraza);
+		
+		JSeparator separator = new JSeparator();
+		separator.setBounds(29, 108, 331, 12);
+		panel.add(separator);
+		
+		btnCancelar = new JButton("Cancelar");
+		btnCancelar.addActionListener(this);
+		btnCancelar.setBounds(271, 119, 89, 23);
+		panel.add(btnCancelar);
+		
+		JLabel lblSexo = new JLabel("Sexo:");
+		lblSexo.setBounds(29, 75, 71, 21);
+		panel.add(lblSexo);
+		
+		JLabel lblColor = new JLabel("Color:");
+		lblColor.setBounds(219, 76, 71, 21);
+		panel.add(lblColor);
+		
+		txtSexo = new JTextField();
+		txtSexo.setBounds(93, 75, 86, 20);
+		panel.add(txtSexo);
+		txtSexo.setColumns(10);
+		
+		txtColor = new JTextField();
+		txtColor.setBounds(274, 75, 86, 20);
+		panel.add(txtColor);
+		txtColor.setColumns(10);
+		
+		btnVaciar = new JButton("Limpiar");
+		btnVaciar.setBounds(172, 119, 89, 23);
+		btnVaciar.addActionListener(this);
+		panel.add(btnVaciar);
+		
+		txtBusqueda = new JTextField();
+		txtBusqueda.setBounds(219, 53, 86, 20);
+		contentPanel.add(txtBusqueda);
+		txtBusqueda.setColumns(10);
+		
+		btnBuscar = new JButton("Buscar");
+		btnBuscar.setBounds(315, 50, 86, 23);
+		btnBuscar.addActionListener(this);
+		contentPanel.add(btnBuscar);
+		
+		lblIdmascota = new JLabel("ID de la Mascota");
+		lblIdmascota.setBounds(127, 50, 86, 23);
+		contentPanel.add(lblIdmascota);
+	}
+
+
+	
+		
+	
+
+
+	public void vaciar() {
+		
+		txtBusqueda.setText("");
+		txtIdDueno.setText("");
+		txtNombre.setText("");
+		txtraza.setText("");
+		txtSexo.setText("");
+		txtColor.setText("");
+	}
+
+
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+}
