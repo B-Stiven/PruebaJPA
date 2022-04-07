@@ -4,9 +4,9 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
-import com.camilo.dao.MascotaDao;
-import com.camilo.entidades.Mascota;
-import com.camilo.entidades.Persona;
+import com.brayan.dao.MascotaDao;
+import com.brayan.entidades.Mascota;
+import com.brayan.entidades.Persona;
 
 
 public class GestionarMascotas {

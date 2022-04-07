@@ -24,9 +24,7 @@ import javax.swing.border.BevelBorder;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
-
-
-import com.camilo.entidades.Producto;
+import com.brayan.entidades.Producto;
 
 import controlador.*;
 

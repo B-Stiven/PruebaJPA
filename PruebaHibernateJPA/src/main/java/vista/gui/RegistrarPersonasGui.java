@@ -24,8 +24,8 @@ import javax.swing.border.BevelBorder;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
-import com.camilo.entidades.Nacimiento;
-import com.camilo.entidades.Persona;
+import com.brayan.entidades.Nacimiento;
+import com.brayan.entidades.Persona;
 
 import controlador.Coordinador;
 

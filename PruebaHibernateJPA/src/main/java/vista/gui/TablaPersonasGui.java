@@ -20,8 +20,8 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
-import com.camilo.entidades.Persona;
-import com.camilo.entidades.Nacimiento;
+import com.brayan.entidades.Nacimiento;
+import com.brayan.entidades.Persona;
 
 import controlador.Coordinador;
 

@@ -22,8 +22,8 @@ import javax.swing.border.BevelBorder;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
-import com.camilo.entidades.Mascota;
-import com.camilo.entidades.Persona;
+import com.brayan.entidades.Mascota;
+import com.brayan.entidades.Persona;
 
 import controlador.Coordinador;
 

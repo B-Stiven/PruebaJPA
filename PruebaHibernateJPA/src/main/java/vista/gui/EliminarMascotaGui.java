@@ -17,7 +17,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 
-import com.camilo.entidades.Mascota;
+import com.brayan.entidades.Mascota;
 
 import controlador.Coordinador;
 

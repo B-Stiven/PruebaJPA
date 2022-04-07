@@ -19,7 +19,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
-import com.camilo.entidades.Persona;
+import com.brayan.entidades.Persona;
 
 import controlador.Coordinador;
 

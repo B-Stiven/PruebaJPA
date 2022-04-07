@@ -5,11 +5,11 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
-import com.camilo.dao.MascotaDao;
-import com.camilo.dao.PersonaDao;
-import com.camilo.entidades.Mascota;
-import com.camilo.entidades.Nacimiento;
-import com.camilo.entidades.Persona;
+import com.brayan.dao.MascotaDao;
+import com.brayan.dao.PersonaDao;
+import com.brayan.entidades.Mascota;
+import com.brayan.entidades.Nacimiento;
+import com.brayan.entidades.Persona;
 
 public class GestionarPersonas {
 	PersonaDao mipersonaDao = new PersonaDao();

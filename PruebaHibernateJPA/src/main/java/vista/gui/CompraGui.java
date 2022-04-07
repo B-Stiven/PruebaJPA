@@ -8,9 +8,9 @@ import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import com.camilo.entidades.Persona;
-import com.camilo.entidades.PersonasProductos;
-import com.camilo.entidades.Producto;
+import com.brayan.entidades.Persona;
+import com.brayan.entidades.PersonasProductos;
+import com.brayan.entidades.Producto;
 
 import java.awt.event.*;
 

@@ -4,11 +4,11 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
-import com.camilo.dao.ProductoDao;
-import com.camilo.entidades.Mascota;
-import com.camilo.entidades.Persona;
-import com.camilo.entidades.PersonasProductos;
-import com.camilo.entidades.Producto;
+import com.brayan.dao.ProductoDao;
+import com.brayan.entidades.Mascota;
+import com.brayan.entidades.Persona;
+import com.brayan.entidades.PersonasProductos;
+import com.brayan.entidades.Producto;
 
 public class GestionarProductos {
 	ProductoDao miproductoDao= new ProductoDao();

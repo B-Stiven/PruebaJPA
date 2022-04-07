@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import com.camilo.entidades.Producto;
+import com.brayan.entidades.Producto;
 
 import controlador.Coordinador;
 

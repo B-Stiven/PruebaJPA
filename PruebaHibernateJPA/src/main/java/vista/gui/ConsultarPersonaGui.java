@@ -8,10 +8,10 @@ import java.awt.EventQueue;
 
 import javax.swing.border.EmptyBorder;
 
-import com.camilo.entidades.Persona;
+import com.brayan.entidades.Nacimiento;
+import com.brayan.entidades.Persona;
 
 import controlador.Coordinador;
-import com.camilo.entidades.Nacimiento;
 
 import javax.swing.*;
 import java.awt.event.*;

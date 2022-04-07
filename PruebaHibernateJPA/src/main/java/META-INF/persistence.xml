@@ -11,7 +11,7 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bd_hibernatel?
 useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
 <property name="javax.persistence.jdbc.user" value="root"/>
-<property name="javax.persistence.jdbc.password" value="656511"/>
+<property name="javax.persistence.jdbc.password" value="Sena1234"/>
 <property name="hibernate.show_sql" value="drop-and-create"/>
 <property name="hibernate.hbm2ddl.auto" value="update"/>
 </properties>

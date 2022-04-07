@@ -14,7 +14,7 @@ import javax.swing.JTable;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.table.DefaultTableModel;
 
-import com.camilo.entidades.Mascota;
+import com.brayan.entidades.Mascota;
 
 import controlador.Coordinador;
 

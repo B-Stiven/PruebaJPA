@@ -15,7 +15,7 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
-import com.camilo.entidades.Producto;
+import com.brayan.entidades.Producto;
 
 import controlador.Coordinador;
 

@@ -6,10 +6,10 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
-import com.camilo.dao.*;
-
 import controlador.*;
-import com.camilo.entidades.*;
+
+import com.brayan.dao.*;
+import com.brayan.entidades.*;
 
 import vista.gui.*;
 
