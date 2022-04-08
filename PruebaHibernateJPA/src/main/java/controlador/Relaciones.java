@@ -7,6 +7,8 @@ import vista.gui.*;
 
 public class Relaciones {
 	
+	
+
 	public Relaciones() {
 		VentanaPrincipal miVentanaPrincipal;
 		RegistrarPersonasGui miRegistrarPersonasGui;
@@ -26,6 +28,7 @@ public class Relaciones {
 		TablaProductosGui miTablaProductosGui;
 		EliminarMascotaGui miEliminarMascotaGui;
 		CompraGui miVentanaComprar = null;
+		TablaProductosPersonasGui miTablaProductosPersonas = null;
 		
 		miVentanaPrincipal= new VentanaPrincipal();
 		miCoordinador= new Coordinador();
@@ -50,7 +53,7 @@ public class Relaciones {
 		miTablaProductosGui = new TablaProductosGui();
 		miEliminarMascotaGui=new EliminarMascotaGui(miVentanaPrincipal, true); 
 		miVentanaComprar=new CompraGui(miVentanaComprar, true);
-
+		miTablaProductosPersonas=new TablaProductosPersonasGui (miTablaProductosPersonas, true);
 		
 	
 		
@@ -76,7 +79,7 @@ public class Relaciones {
 		miCoordinador.setTablaProductosGui(miTablaProductosGui);
 		miCoordinador.setEliminarMascotGui(miEliminarMascotaGui);
 		miCoordinador.setMiVentanaCompra(miVentanaComprar);
-		
+		miCoordinador.setmiTablaProductosPersonas(miTablaProductosPersonas);
 	
 		
 		
@@ -102,6 +105,7 @@ public class Relaciones {
 		miTablaProductosGui.setCoordinador(miCoordinador);
 		miEliminarMascotaGui.setMiCoordinador(miCoordinador);
 		miVentanaComprar.setCoordinador(miCoordinador);
+		miTablaProductosPersonas.setCoordinador(miCoordinador);
 		
 		
 		

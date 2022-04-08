@@ -33,6 +33,7 @@ public class Coordinador {
 	
 	ProductoDao miProductoDao = new ProductoDao();
 	private CompraGui miVentanaCompra;
+	private TablaProductosPersonasGui miTablaProductosPersonas;
 
 	//cordinador con ventanas
 
@@ -316,6 +317,21 @@ public class Coordinador {
 	public String registrarCompra(PersonasProductos miPerPro) {
 		
 		return miProductoDao.registarcompra(miPerPro);
+	}
+
+	public ArrayList<PersonasProductos> ListarProductosPersonas() {
+		
+		return (ArrayList<PersonasProductos>) miProductoDao.ConsultarListaMascotas();
+	}
+
+	public void setmiTablaProductosPersonas(TablaProductosPersonasGui miTablaProductosPersonas) {
+		this.miTablaProductosPersonas=miTablaProductosPersonas;
+		
+	}
+
+	public void mostrarListarCompra() {
+		miTablaProductosPersonas.setVisible(true);
+		
 	}
 
 

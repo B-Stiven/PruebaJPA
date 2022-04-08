@@ -43,6 +43,7 @@ public class VentanaPrincipal extends JFrame implements ActionListener{
 	private JMenuItem itemRegistroProductos;
 	private Coordinador micoordinador;
 	private JMenuItem itemComprar;
+	private JMenuItem itemListarCompra;
 
 	/**
 	 * Create the frame.
@@ -118,6 +119,10 @@ public class VentanaPrincipal extends JFrame implements ActionListener{
 		itemComprar.addActionListener(this);
 		menuProductos.add(itemComprar);
 		
+		itemListarCompra= new JMenuItem("listar Compras");
+		itemComprar.addActionListener(this);
+		menuProductos.add(itemListarCompra);
+		
 		itemEliminarProductos = new JMenuItem("Eliminar");
 		itemEliminarProductos.addActionListener(this);
 		
@@ -181,6 +186,8 @@ public class VentanaPrincipal extends JFrame implements ActionListener{
 			micoordinador.mostrarVentanaEliminarMascota();
 		}if (e.getSource() == itemComprar) {
 			micoordinador.mostrarCompra();
+		}if (e.getSource() == itemListarCompra) {
+			micoordinador.mostrarListarCompra();
 		}
 		
 		

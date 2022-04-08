@@ -96,5 +96,14 @@ public class ProductoDao {
 		return res;
 	}
 
+	public ArrayList<PersonasProductos> ConsultarListaMascotas() {
+		
+		ArrayList<PersonasProductos> listaPersonasProductos  = new ArrayList<PersonasProductos>();
+		Query query = entityManager.createQuery("SELECT p FROM PersonasProductos p");
+		listaPersonasProductos = (ArrayList<PersonasProductos>) query.getResultList();
+		
+		return listaPersonasProductos;
+	}
+
 
 }
